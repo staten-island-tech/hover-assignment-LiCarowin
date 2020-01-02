@@ -11,33 +11,29 @@ body {
     //text-align: center;
     margin: 0 auto;
     //width: 60rem;
-    height: 60rem;
+    height: 15rem;
     width: 40rem;
   }
 .gallery {
     position: relative;
   }
-.pd6-photo {
-    height: 20rem;
+.galleryone {
+    height: 5rem;
     position: absolute;
     transition: all 0.3s;
     outline-offset: 1rem;
   }
-.panda {
+.gallerytwo {
     top: 13rem;
     left: 0
   }
-.car {
+.gallerythree {
     top: 20rem;
     right: -20rem;
   }
-.mustard {
-    top: 4rem;
-    left: 65%;
-  }
-.pd6-photo:hover {
+.galleryone:hover {
     transform: scale(1.3);
-    outline: 1rem solid #222;
+    outline: 1rem solid rgb(247, 170, 221);
     z-index: 2;
   }
 .gallery:hover .pd6-photo:not(:hover) {
