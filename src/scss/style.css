@@ -21,7 +21,8 @@ body {
 }
 
 .galleryone {
-  height: 5rem;
+  height: auto;
+  width: auto;
   position: absolute;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -29,11 +30,19 @@ body {
 }
 
 .gallerytwo {
+  position: absolute;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  outline-offset: 1rem;
   top: 13rem;
   left: 0;
 }
 
 .gallerythree {
+  position: absolute;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  outline-offset: 1rem;
   top: 20rem;
   right: -20rem;
 }
@@ -45,9 +54,17 @@ body {
   z-index: 2;
 }
 
-.gallery:hover .pd6-photo:not(:hover) {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-  opacity: 0.3;
+.gallerytwo:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  outline: 1rem solid #f7aadd;
+  z-index: 2;
+}
+
+.gallerythree:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  outline: 1rem solid #f7aadd;
+  z-index: 2;
 }
 /*# sourceMappingURL=style.css.map */
