@@ -7,88 +7,42 @@ html {
 body {
     text-align: center;
   }
-.gallery-parent {
+
+  .galleryone-parent {
     margin: 0 auto;
     height: 15rem;
     width: 40rem;
   }
-.gallery {
+  .gallery {
     position: relative;
   }
-.galleryoneone {
-    height: auto;
-    width: auto;
-    top: 7rem;
-    position: absolute;
-
-    outline-offset: 1rem;
-  }
-.galleryonetwo {
-    top: 20rem;
-    left: 65rem;
-    position: absolute;
-    transition: all 0.3s;
-    outline-offset: 1rem;
-
-  }
-.galleryonethree {
-    top: 23rem;
-    right: 81rem;
-    position: absolute;
-    transition: all 0.3s;
-    outline-offset: 1rem;
-
-  }
-.galleryoneone:hover {
-    transform: scale(1.3);
-    outline: 1rem solid rgb(247, 170, 221);
-    z-index: 2;
-  }
-.galleryonetwo:hover {
-    transform: scale(1.3);
-    outline: 1rem solid rgb(247, 170, 221);
-    z-index: 2;
-  }
-.galleryonethree:hover {
-    transform: scale(1.3);
-    outline: 1rem solid rgb(247, 170, 221);
-    z-index: 2;
-  }
-
-.gallerytwoone {
-    top:57rem;
+  .WCF {
     position: absolute;
     transition: all 0.3s;
     outline-offset: 1rem;
   }
-.gallerytwotwo {
+  .WCF:hover {
+    transform: scale(1.3);
+    outline: 1rem solid rgb(247, 170, 221);
+    z-index: 2;
+  }
+  .sky {
     top: 70rem;
-    left: 65rem;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
     position: absolute;
-    transition: all 0.3s;
-    outline-offset: 1rem;
-
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
   }
-.gallerytwothree {
-    top: 73rem;
-    right: 81rem;
-    position: absolute;
-    transition: all 0.3s;
-    outline-offset: 1rem;
-
-  }
-.gallerytwoone:hover {
-    transform: scale(1.3);
-    outline: 1rem solid rgb(202, 127, 236);
-    z-index: 2;
-  }
-.gallerytwotwo:hover {
-    transform: scale(1.3);
-    outline: 1rem solid rgb(202, 127, 236);
-    z-index: 2;
-  }
-.gallerytwothree:hover {
-    transform: scale(1.3);
-    outline: 1rem solid rgb(202, 127, 236);
-    z-index: 2;
+  
+  .gallerytwotwo:hover .overlay {
+    opacity: 1;
   }
