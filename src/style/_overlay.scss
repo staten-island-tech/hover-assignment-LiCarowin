@@ -1,0 +1,15 @@
+.overlaybase {
+    top: 70rem;
+    width: 100%;
+    height: auto;
+  }
+  .overlay {
+    position: absolute;
+    opacity: 0;
+    transition: .5s ease;
+  }
+  
+  .overlay.overlaybase:hover {
+    opacity: 1;
+  }
+  
