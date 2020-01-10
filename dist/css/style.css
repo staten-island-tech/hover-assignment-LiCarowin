@@ -8,33 +8,41 @@ html {
 body {
   text-align: center;
 }
-
-.gallery {
+.div {
   position: relative;
-  justify-content: center;
+  flex-direction: column;
 }
-.WCFH {
+.zoomin figure img{
   position: absolute;
   transition: all 0.3s;
   outline-offset: 1rem;
 }
-.WCFH:hover {
+.zoomin figure:hover img{
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
   outline: 1rem solid #f7aadd;
-  z-index: 2;
+  z-index: 1;
 }
-.overlaybase {
+.blur figure img {
   position: absolute;
-  }
-  .overlay {
-    position: absolute;
-    opacity: 0;
-  }
-  
-  .overlay.overlaybase:hover {
-    transition: .5s ease;
-    opacity: 1;
-  }
-  
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.blur figure:hover img {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
+.grayscale figure img {
+  position: absolute;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.grayscale figure:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
 /*# sourceMappingURL=style.css.map */

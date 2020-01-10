@@ -11,27 +11,23 @@ body {
 .gallery {
   position: relative;
 }
-.WCFH {
+.enlarge figure img{
   position: absolute;
   transition: all 0.3s;
   outline-offset: 1rem;
 }
-.WCFH:hover {
+.enlarge figure:hover img{
   transform: scale(1.3);
   outline: 1rem solid rgb(247, 170, 221);
   z-index: 2;
 }
-.overlaybase {
-  top: 70rem;
-  width: 100%;
-  height: auto;
+.zoomin figure img{
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
-.overlay {
-  position: absolute;
-  opacity: 0;
-}
-
-.overlaybase:hover {
-  opacity: 1;
-  transition: .5s ease;
+.zoomin figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
 }
