@@ -6,19 +6,19 @@ html {
 }
 body {
   text-align: center;
+  margin: 0 auto;
 }
-
+.gallery-parent {
+  margin: 0rem;
+}
 .gallery {
-  position: relative;
+  margin: 0rem;
 }
 .enlarge figure img{
-  position: absolute;
   transition: all 0.3s;
-  outline-offset: 1rem;
 }
 .enlarge figure:hover img{
   transform: scale(1.3);
-  outline: 1rem solid rgb(247, 170, 221);
   z-index: 2;
 }
 .zoomin figure img{
@@ -30,4 +30,12 @@ body {
 .zoomin figure:hover img {
 	-webkit-transform: scale(1.3);
 	transform: scale(1.3);
+}
+.opacity figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.opacity figure:hover img {
+	opacity: .5;
 }

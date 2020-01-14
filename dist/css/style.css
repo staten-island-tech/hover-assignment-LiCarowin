@@ -7,24 +7,24 @@ html {
 }
 body {
   text-align: center;
+  margin: 0rem;
 }
-.div {
+.gallery-parent {
   position: relative;
-  flex-direction: column;
+  margin: 0rem;
+}
+.gallery {
+  position: relative;
+  margin: 0rem;
 }
 .zoomin figure img{
-  position: absolute;
   transition: all 0.3s;
-  outline-offset: 1rem;
 }
 .zoomin figure:hover img{
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
-  outline: 1rem solid #f7aadd;
-  z-index: 1;
 }
 .blur figure img {
-  position: absolute;
 	-webkit-filter: blur(3px);
 	filter: blur(3px);
 	-webkit-transition: .3s ease-in-out;
@@ -35,7 +35,6 @@ body {
 	filter: blur(0);
 }
 .grayscale figure img {
-  position: absolute;
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	-webkit-transition: .3s ease-in-out;
@@ -44,5 +43,44 @@ body {
 .grayscale figure:hover img {
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
+}
+.rotate figure img {
+	-webkit-transform: rotate(15deg) scale(1);
+	transform: rotate(15deg) scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.rotate figure:hover img {
+	-webkit-transform: rotate(0) scale(1);
+	transform: rotate(0) scale(1);
+}
+.opacity figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.opacity figure:hover img {
+  opacity: .5;
+}
+.flashanimation figure:hover img {
+	opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 /*# sourceMappingURL=style.css.map */
